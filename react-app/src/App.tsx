@@ -1,6 +1,6 @@
 import React from 'react';
-import { ChakraProvider, Button } from '@chakra-ui/react';
-import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
+import { HashRouter } from 'react-router-dom';
 
 import theme from "./theme/theme";
 import { Router } from "./router/Router";
@@ -8,9 +8,9 @@ import { Router } from "./router/Router";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <HashRouter>
+      <Router />
+      </HashRouter>
     </ChakraProvider>
   );
 
